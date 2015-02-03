@@ -1,33 +1,11 @@
-# The Ultimate vimrc
+# The Ultimate vimrc by Brandon Giesing
+## Based of off [amix's Ultimate vimrc](https://github.com/amix/vimrc)
 
-Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+## How to install
+This vimrc includes a lot of great plugins and configurations that make Vim a lot better. To install it simply do following:
 
-There are two versions:
-
-* **Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
-* **Awesome**: This includes a ton of useful plugins, color schemes and configurations
-
-I would of course recommend using the awesome version.
-
-
-## How to install the Basic version?
-The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim).
-
-This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
-
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_basic_vimrc.sh
-
-
-## How to install the Awesome version?
-The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
-
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
-
-The taglist.vim plugin will require ctags (http://ctags.sourceforge.net) (Debian: apt-get install ctags)
-
-I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
+    git clone git://github.com/bgiesing/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_vimrc.sh
 
 ## How to install on Windows?
 
@@ -36,11 +14,11 @@ Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the
 
 ## How to update to latest version?
 
-Simply just do a git rebase!
+Simply just do a git rebase and submodule update!
 
     cd ~/.vim_runtime
     git pull --rebase
-
+    git submodule update
 
 ## Some screenshots
 
@@ -59,65 +37,42 @@ This vimrc even works on Windows!
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2):
 ![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
 
-
 ## Included Plugins
 
 I recommend reading the docs of these plugins to understand them better. Each of them provide a much better Vim experience!
 
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manages the runtime path of the plugins
-* [YankRing](https://github.com/vim-scripts/YankRing.vim): Maintains a history of previous yanks, changes and deletes
 * [snipMate.vim](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Buffer Explorer / Browser. This plugin can be opened with `<leader+o>`
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
-* [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for the Perl module / CLI script 'ack'
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. In my config it's mapped to `<Ctrl+F>`, because `<Ctrl+P>` is used by YankRing
-* [mru.vim](https://github.com/vim-scripts/mru.vim): Plugin to manage Most Recently Used (MRU) files. Includes my own fork which adds syntax highlighting to MRU. This plugin can be opened with `<leader+f>`
-* [open_file_under_cursor.vim](https://github.com/amix/open_file_under_cursor.vim): Open file under cursor when pressing `gf`
 * [zencoding](https://github.com/mattn/emmet-vim): Expanding abbreviation like zen-coding, very useful for editing XML, HTML.
-* [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object): Defines a new text object representing lines of code at the same indent level. Useful for python/vim scripts
-* [taglist.vim](https://github.com/vim-scripts/taglist.vim): Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
-* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections for Vim, CTRL+N is remapped to CTRL+S (due to YankRing)
-* [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination.
 * [vim-airline](https://github.com/bling/vim-airline): Lean & mean status/tabline for vim that's light as air (replacing powerline)
-* [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome, it should be illegal
-* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
-Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
+* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
-
 
 ## Included color schemes
 
 * [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* [vim-irblack](https://github.com/wgibbs/vim-irblack)
-* [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [vim-pyte](https://github.com/therubymug/vim-pyte)
-
 
 ## Included modes
 
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-* [vim-less](https://github.com/groenewege/vim-less)
-* [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
 * [vim-markdown](https://github.com/tpope/vim-markdown)
-* [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
-* [vim-golang](https://github.com/jnwhiteh/vim-golang)
-
 
 ## How to include your own stuff?
 
 After you have installed the setup you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
 
-	~/.vim_runtime (master)> cat my_configs.vim
-	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
-	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
+    ~/.vim_runtime (master)> cat my_configs.vim
+    map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
+    map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr>
 
 You can also install your own plugins, for instance, via pathogen we can install [vim-rails](https://github.com/tpope/vim-rails):
 
-	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
-	
+    cd ~/.vim_runtime
+    git submodule add git://github.com/tpope/vim-rails.git sources/vim-rails
+
 Now you have vim-rails installed ;-)
 
 
@@ -126,25 +81,17 @@ Now you have vim-rails installed ;-)
 ### Plugin related mappings
 
 Open [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip) and see and manage the current buffers:
-    
+
     map <leader>o :BufExplorer<cr>
 
-Open [MRU.vim](https://github.com/vim-scripts/mru.vim) and see the recently open files:
-
-    map <leader>f :MRU<CR>
-
 Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin:
-    
+
     let g:ctrlp_map = '<c-f>'
-
-Open [PeepOpen](https://peepcode.com/products/peepopen) plugin:
-
-    map <leader>j :PeepOpen<cr>
 
 Managing the [NERD Tree](https://github.com/scrooloose/nerdtree) plugin:
 
     map <leader>nn :NERDTreeToggle<cr>
-    map <leader>nb :NERDTreeFromBookmark 
+    map <leader>nb :NERDTreeFromBookmark
     map <leader>nf :NERDTreeFind<cr>
 
 [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2) lets you only focus on one thing at a time. It removes all the distractions and centers the content. It has a special look when editing Markdown, reStructuredText and textfiles. It only has one mapping.
@@ -155,72 +102,72 @@ Managing the [NERD Tree](https://github.com/scrooloose/nerdtree) plugin:
 
 Fast saving of a buffer:
 
-	nmap <leader>w :w!<cr>
+    nmap <leader>w :w!<cr>
 
 Treat long lines as break lines (useful when moving around in them):
 
-	map j gj
-	map k gk
-	
+    map j gj
+    map k gk
+
 Map `<Space>` to `/` (search) and `<Ctrl>+<Space>` to `?` (backwards search):
-	
-	map <space> /
-	map <c-space> ?
-	map <silent> <leader><cr> :noh<cr>
+
+    map <space> /
+    map <c-space> ?
+    map <silent> <leader><cr> :noh<cr>
 
 Disable highlight when `<leader><cr>` is pressed:
-	
-	map <silent> <leader><cr> :noh<cr>
+
+    map <silent> <leader><cr> :noh<cr>
 
 Smart way to move between windows:
-	
-	map <C-j> <C-W>j
-	map <C-k> <C-W>k
-	map <C-h> <C-W>h
-	map <C-l> <C-W>l
+
+    map <C-j> <C-W>j
+    map <C-k> <C-W>k
+    map <C-h> <C-W>h
+    map <C-l> <C-W>l
 
 Closing of current buffer(s):
-	
-	" Close current buffer
-	map <leader>bd :Bclose<cr>
-	
-	" Close all buffers
-	map <leader>ba :1,1000 bd!<cr>
-	
+
+    " Close current buffer
+    map <leader>bd :Bclose<cr>
+
+    " Close all buffers
+    map <leader>ba :1,1000 bd!<cr>
+
 Useful mappings for managing tabs:
-	
-	map <leader>tn :tabnew<cr>
-	map <leader>to :tabonly<cr>
-	map <leader>tc :tabclose<cr>
-	map <leader>tm :tabmove 
-	
-	" Opens a new tab with the current buffer's path
-	" Super useful when editing files in the same directory
-	map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-	
+
+    map <leader>tn :tabnew<cr>
+    map <leader>to :tabonly<cr>
+    map <leader>tc :tabclose<cr>
+    map <leader>tm :tabmove
+
+    " Opens a new tab with the current buffer's path
+    " Super useful when editing files in the same directory
+    map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
 Switch CWD to the directory of the open buffer:
-	
-	map <leader>cd :cd %:p:h<cr>:pwd<cr>
-	
+
+    map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
 Open vimgrep and put the cursor in the right position:
-	
-	map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+
+    map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 
 Vimgreps in the current file:
-	
-	map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
+
+    map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
 
 Remove the Windows ^M - when the encodings gets messed up:
-	
-	noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-	
+
+    noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
 Quickly open a buffer for scripbble:
-	
-	map <leader>q :e ~/buffer<cr>
+
+    map <leader>q :e ~/buffer<cr>
 
 Toggle paste mode on and off:
-	
-	map <leader>pp :setlocal paste!<cr>
+
+    map <leader>pp :setlocal paste!<cr>
 
 
 ### Insert mode mappings
@@ -244,16 +191,16 @@ Insert the current date and time (useful for timestamps):
 
 Visual mode pressing `*` or `#` searches for the current selection:
 
-	vnoremap <silent> * :call VisualSelection('f')<CR>
-	vnoremap <silent> # :call VisualSelection('b')<CR>
+    vnoremap <silent> * :call VisualSelection('f')<CR>
+    vnoremap <silent> # :call VisualSelection('b')<CR>
 
 When you press gv you vimgrep after the selected text:
 
-	vnoremap <silent> gv :call VisualSelection('gv')<CR>
+    vnoremap <silent> gv :call VisualSelection('gv')<CR>
 
 When you press `<leader>r` you can search and replace the selected text:
 
-	vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
+    vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 
 Surround the visual selection in parenthesis/brackets/etc.:
 
@@ -263,7 +210,7 @@ Surround the visual selection in parenthesis/brackets/etc.:
     vnoremap $$ <esc>`>a"<esc>`<i"<esc>
     vnoremap $q <esc>`>a'<esc>`<i'<esc>
     vnoremap $e <esc>`>a"<esc>`<i"<esc>
-	
+
 
 ### Command line mappings
 
@@ -273,16 +220,16 @@ $q is super useful when browsing on the command line. It deletes everything unti
 
 Bash like keys for the command line:
 
-    cnoremap <C-A>		<Home>
-    cnoremap <C-E>		<End>
-    cnoremap <C-K>		<C-U>
+    cnoremap <C-A>      <Home>
+    cnoremap <C-E>      <End>
+    cnoremap <C-K>      <C-U>
 
     cnoremap <C-P> <Up>
     cnoremap <C-N> <Down>
 
 Write the file as sudo (only on Unix). Super useful when you open a file and you don't have permissions to save your changes. [Vim tip](http://vim.wikia.com/wiki/Su-write):
 
-    :W 
+    :W
 
 
 ### Spell checking
@@ -297,7 +244,7 @@ Shortcuts using `<leader>` instead of special chars
     map <leader>sa zg
     map <leader>s? z=
 
-### Cope	
+### Cope
 Do :help cope if you are unsure what cope is. It's super useful!
 
 When you search with vimgrep, display your results in cope by doing:
@@ -315,15 +262,3 @@ Vimscript mappings:
     map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
     map <leader>n :cn<cr>
     map <leader>p :cp<cr>
-
-## Useful blog tips regarding my Vim setup
-
-* [Vim: Annotate strings with gettext (the macro way)](http://amix.dk/blog/post/19678#Vim-Annotate-strings-with-gettext-the-macro-way)
-* [vimgrep: Searching through multiple file extensions](http://amix.dk/blog/post/19672#vimgrep-Searching-through-multiple-file-extensions)
-* [Filtering through vimgrep results using regular expressions](http://amix.dk/blog/post/19666#Filtering-through-vimgrep-results-using-regular-expressions)
-* [PeepOpen - File auto completion for Mac editors](http://amix.dk/blog/post/19601#PeepOpen-File-auto-completion-for-Mac-editors)
-* [Vim 7.3: Persistent undo and encryption!](http://amix.dk/blog/post/19548#Vim-7-3-Persistent-undo-and-encryption)
-* [Vim tips: Visual Search](http://amix.dk/blog/post/19334#Vim-tips-Visual-Search)
-* [Folding in Vim](http://amix.dk/blog/post/19132#Folding-in-Vim)
-* [
-Zen room for Vim: Focusing only on the essential](http://amix.dk/blog/post/19744#zenroom-for-Vim-Focsuing-only-on-the-essential)
