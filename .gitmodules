@@ -16,3 +16,12 @@
 [submodule "sources_non_forked/goyo.vim"]
 	path = sources_non_forked/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
+[submodule "sources_non_forked/peaksea"]
+	path = sources_non_forked/peaksea
+	url = https://github.com/vim-scripts/peaksea.git
+[submodule "sources_non_forked/vim-commentary"]
+	path = sources_non_forked/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "sources_non_forked/vim-markdown"]
+	path = sources_non_forked/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
