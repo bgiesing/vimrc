@@ -49,3 +49,6 @@
 [submodule "sources/vim-repeat"]
 	path = sources/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "sources/vim-pathogen"]
+	path = sources/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
