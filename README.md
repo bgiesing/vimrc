@@ -1,5 +1,5 @@
 # The Ultimate vimrc by Brandon Giesing
-## Based of off [amix's Ultimate vimrc](https://github.com/amix/vimrc)
+## Based off of [amix's Ultimate vimrc](https://github.com/amix/vimrc)
 
 ## How to install
 This vimrc includes a lot of great plugins and configurations that make Vim a lot better. To install it simply do following:
