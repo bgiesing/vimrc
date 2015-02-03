@@ -1,51 +1,51 @@
-[submodule "sources_non_forked/emmet"]
-	path = sources_non_forked/emmet
+[submodule "sources/emmet"]
+	path = sources/emmet
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "sources_non_forked/nerdtree"]
-	path = sources_non_forked/nerdtree
+[submodule "sources/nerdtree"]
+	path = sources/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "sources_non_forked/surround"]
-	path = sources_non_forked/surround
+[submodule "sources/surround"]
+	path = sources/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "sources_non_forked/bufexplorer"]
-	path = sources_non_forked/bufexplorer
+[submodule "sources/bufexplorer"]
+	path = sources/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
-[submodule "sources_non_forked/ctrlp.vim"]
-	path = sources_non_forked/ctrlp.vim
+[submodule "sources/ctrlp.vim"]
+	path = sources/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "sources_non_forked/goyo.vim"]
-	path = sources_non_forked/goyo.vim
+[submodule "sources/goyo.vim"]
+	path = sources/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
-[submodule "sources_non_forked/peaksea"]
-	path = sources_non_forked/peaksea
+[submodule "sources/peaksea"]
+	path = sources/peaksea
 	url = https://github.com/vim-scripts/peaksea.git
-[submodule "sources_non_forked/vim-commentary"]
-	path = sources_non_forked/vim-commentary
+[submodule "sources/vim-commentary"]
+	path = sources/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule "sources_non_forked/vim-markdown"]
-	path = sources_non_forked/vim-markdown
+[submodule "sources/vim-markdown"]
+	path = sources/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "sources_non_forked/vim-snipmate"]
-	path = sources_non_forked/vim-snipmate
+[submodule "sources/vim-snipmate"]
+	path = sources/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "sources_non_forked/vim-snippets"]
-	path = sources_non_forked/vim-snippets
+[submodule "sources/vim-snippets"]
+	path = sources/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "sources_non_forked/vim-zenroom2"]
-	path = sources_non_forked/vim-zenroom2
+[submodule "sources/vim-zenroom2"]
+	path = sources/vim-zenroom2
 	url = https://github.com/amix/vim-zenroom2.git
-[submodule "sources_non_forked/vim-airline"]
-	path = sources_non_forked/vim-airline
+[submodule "sources/vim-airline"]
+	path = sources/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "sources_non_forked/vim-addon-mw-utils"]
-	path = sources_non_forked/vim-addon-mw-utils
+[submodule "sources/vim-addon-mw-utils"]
+	path = sources/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "sources_non_forked/syntastic"]
-	path = sources_non_forked/syntastic
+[submodule "sources/syntastic"]
+	path = sources/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "sources_non_forked/tlib"]
-	path = sources_non_forked/tlib
+[submodule "sources/tlib"]
+	path = sources/tlib
 	url = https://github.com/vim-scripts/tlib.git
-[submodule "sources_non_forked/vim-repeat"]
-	path = sources_non_forked/vim-repeat
+[submodule "sources/vim-repeat"]
+	path = sources/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
