@@ -7,3 +7,12 @@
 [submodule "sources_non_forked/surround"]
 	path = sources_non_forked/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "sources_non_forked/bufexplorer"]
+	path = sources_non_forked/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "sources_non_forked/ctrlp.vim"]
+	path = sources_non_forked/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "sources_non_forked/goyo.vim"]
+	path = sources_non_forked/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
