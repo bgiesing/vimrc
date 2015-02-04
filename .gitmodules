@@ -10,7 +10,6 @@
 [submodule "sources/bufexplorer"]
 	path = sources/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
-    ignore = dirty
 [submodule "sources/ctrlp.vim"]
 	path = sources/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
@@ -47,10 +46,12 @@
 [submodule "sources/tlib"]
 	path = sources/tlib
 	url = https://github.com/vim-scripts/tlib.git
-    ignore = dirty
 [submodule "sources/vim-repeat"]
 	path = sources/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "sources/vim-pathogen"]
 	path = sources/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "sources/gundo"]
+	path = sources/gundo
+	url = https://github.com/sjl/gundo.vim.git
