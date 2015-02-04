@@ -57,3 +57,6 @@
 [submodule "sources/gundo"]
 	path = sources/gundo
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "sources/vim-fugitive"]
+	path = sources/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
