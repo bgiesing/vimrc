@@ -441,7 +441,7 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-autocmd FileWritePre    * :call <SID>StripTrailingWhitespaces()
-autocmd FileAppendPre   * :call <SID>StripTrailingWhitespaces()
-autocmd FilterWritePre  * :call <SID>StripTrailingWhitespaces()
-autocmd BufWritePre     * :call <SID>StripTrailingWhitespaces()
+autocmd FileWritePre    * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd FileAppendPre   * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd FilterWritePre  * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd BufWritePre     * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
