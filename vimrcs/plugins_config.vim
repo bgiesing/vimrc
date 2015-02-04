@@ -80,3 +80,9 @@ let g:syntastic_python_checkers=['pyflakes']
 " => Gundo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <F5> :GundoToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Markdown Config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable Folding
+let g:markdown_enable_folding = 1

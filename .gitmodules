@@ -23,9 +23,6 @@
 [submodule "sources/vim-commentary"]
 	path = sources/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule "sources/vim-markdown"]
-	path = sources/vim-markdown
-	url = https://github.com/tpope/vim-markdown.git
 [submodule "sources/vim-snipmate"]
 	path = sources/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
@@ -60,3 +57,6 @@
 [submodule "sources/vim-fugitive"]
 	path = sources/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "sources/vim-markdown"]
+	path = sources/vim-markdown
+	url = https://github.com/gabrielelana/vim-markdown.git
