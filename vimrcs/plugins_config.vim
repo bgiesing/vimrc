@@ -45,8 +45,12 @@ let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd Tree
+" => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show line numbers for easy navigation
+let NERDTreeShowLineNumbers=1
+
+" Leader commands
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
@@ -86,3 +90,9 @@ nnoremap <F5> :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable Folding
 let g:markdown_enable_folding = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Hard Mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()

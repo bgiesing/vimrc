@@ -66,3 +66,9 @@
 [submodule "sources/vim-visual-star-search"]
 	path = sources/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
+[submodule "sources/hardmode"]
+	path = sources/hardmode
+	url = https://github.com/wikitopian/hardmode.git
+[submodule "sources/vim-easymotion"]
+	path = sources/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
