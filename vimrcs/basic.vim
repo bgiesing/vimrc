@@ -291,15 +291,11 @@ if has("mac") || has("macunix")
   vmap <D-k> <M-k>
 endif
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
-
+" Delete trailing white space on save ;)
+autocmd FileWritePre    * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd FileAppendPre   * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd FilterWritePre  * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
+autocmd BufWritePre     * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack searching and cope displaying
@@ -440,8 +436,3 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
-
-autocmd FileWritePre    * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
-autocmd FileAppendPre   * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
-autocmd FilterWritePre  * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
-autocmd BufWritePre     * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
