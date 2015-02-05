@@ -46,13 +46,6 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-" Use System Clipboard
-if has('unnamedplus')
-    set clipboard=unnamed,unnamedplus
-else
-    set clipboard=unnamed
-endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
