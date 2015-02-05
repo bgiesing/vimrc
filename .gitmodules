@@ -60,3 +60,9 @@
 [submodule "sources/vim-markdown"]
 	path = sources/vim-markdown
 	url = https://github.com/gabrielelana/vim-markdown.git
+[submodule "vim-visual-star-search"]
+	path = vim-visual-star-search
+	url = https://github.com/nelstrom/vim-visual-star-search.git
+[submodule "sources/vim-visual-star-search"]
+	path = sources/vim-visual-star-search
+	url = https://github.com/nelstrom/vim-visual-star-search.git
