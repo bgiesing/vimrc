@@ -69,3 +69,6 @@
 [submodule "sources/vim-easymotion"]
 	path = sources/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "sources/vim-colors-solarized"]
+	path = sources/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
