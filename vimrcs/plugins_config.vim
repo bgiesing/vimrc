@@ -90,9 +90,3 @@ nnoremap <F5> :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable Folding
 let g:markdown_enable_folding = 1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Hard Mode
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
