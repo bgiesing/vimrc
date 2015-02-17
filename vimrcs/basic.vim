@@ -123,15 +123,10 @@ set cpoptions=ces$
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable syntax highlighting
+let g:solarized_diffmode="high"    "default value is normal
 syntax enable
-
-try
-    colorscheme desert
-catch
-endtry
-
 set background=dark
+colorscheme solarized
 
 " Set extra options when running in GUI mode
 if has("gui_running")
