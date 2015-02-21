@@ -21,6 +21,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Load pathogen paths
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+runtime sources/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect('~/.vim_runtime/sources/{}')
+call pathogen#helptags()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember

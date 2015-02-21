@@ -1,11 +1,4 @@
 """"""""""""""""""""""""""""""
-" => Load pathogen paths
-""""""""""""""""""""""""""""""
-runtime sources/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect('~/.vim_runtime/sources/{}')
-call pathogen#helptags()
-
-""""""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
