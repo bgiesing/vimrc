@@ -72,3 +72,6 @@
 [submodule "sources/vim-colors-solarized"]
 	path = sources/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "sources/vim-instant-markdown"]
+	path = sources/vim-instant-markdown
+	url = https://github.com/suan/vim-instant-markdown.git
