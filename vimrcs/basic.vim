@@ -273,6 +273,16 @@ autocmd FileAppendPre   * if &modifiable | call <SID>StripTrailingWhitespaces() 
 autocmd FilterWritePre  * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
 autocmd BufWritePre     * if &modifiable | call <SID>StripTrailingWhitespaces() | endif
 
+" Underline Current Line
+function! s:Underline(chars)
+    let chars = empty(a:chars) ? '-' : a:chars
+    let nr_columns = virtcol('$') - 1
+    let uline = repeat(chars, (nr_columns / len(chars)) + 1)
+    put =strpart(uline, 0, nr_columns)
+endfunction
+command! -nargs=? Underline call s:Underline(<q-args>)
+nmap <leader>u :Underline
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
