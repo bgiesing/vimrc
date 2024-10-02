@@ -17,4 +17,7 @@ try
 catch
 endtry' > ~/.vimrc
 
+echo "Installing requirements for Instant Markdown plugin"
+npm -g install instant-markdown-d
+
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
