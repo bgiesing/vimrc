@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer:
+"       Brandon Giesing - @bgiesing
 "       Amir Salihefendic - @amix3k
 "
 " Awesome_version:
@@ -7,7 +8,7 @@
 "
 "       Install the awesome version from:
 "
-"           https://github.com/amix/vimrc
+"           https://github.com/bgiesing/vimrc
 "
 " Sections:
 "    -> General
@@ -127,6 +128,11 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Add Numbers on Side
+set number
+
+" Add $ at end of word when changing to make change clearer
+set cpoptions=ces$
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -302,10 +308,25 @@ if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
+" Underline Current Line
+function! s:Underline(chars)
+    let chars = empty(a:chars) ? '-' : a:chars
+    let nr_columns = virtcol('$') - 1
+    let uline = repeat(chars, (nr_columns / len(chars)) + 1)
+    put =strpart(uline, 0, nr_columns)
+endfunction
+command! -nargs=? Underline call s:Underline(<q-args>)
+nmap <leader>u :Underline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable Spell Checking by Default
+set spell
+
+" Set to US English
+set spelllang=en_us
+
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 
@@ -383,4 +404,17 @@ function! VisualSelection(direction, extra_filter) range
 
     let @/ = l:pattern
     let @" = l:saved_reg
+endfunction
+
+" Removes trailing spaces
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
 endfunction
